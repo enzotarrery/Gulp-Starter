@@ -86,7 +86,6 @@ function js() {
       .src(paths.js.src, { since: gulp.lastRun(js) })
       .pipe(plumber())
       .pipe(uglify())
-      .pipe(concat('main.js'))
       .pipe(gulp.dest(paths.js.dest))
       .pipe(browserSync.stream())
   );
