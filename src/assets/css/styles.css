@@ -12,14 +12,14 @@ body {
   /*font-family: 'Noto sans', sans-serif;*/
 }
 
-/* ATTENTION LES LIENS SONT BLANC DANS CE MODELE */
+/* ATTENTION LES LIENS SONT NOIRS DANS CE MODELE */
 a, a:hover, a:visited {
-  color: #FFF;
+  color: black;
   text-decoration: none;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
   height: auto;
   vertical-align: middle; 
 }
