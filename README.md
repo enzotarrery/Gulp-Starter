@@ -1,5 +1,5 @@
 # Starter
-A gulp starter with a minimum of helpful functionalities.
+A gulp starter with a minimum of helpful features.
 
 # Commands
   - gulp dev (in real time render)
