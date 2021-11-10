@@ -1,0 +1,53 @@
+/* Regles generales */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.4rem; /* 14px par défaut */
+  /*font-family: 'Noto sans', sans-serif;*/
+}
+
+/* ATTENTION LES LIENS SONT NOIRS DANS CE MODELE */
+a:link,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/*************************/
+/* Starter: Presentation */
+/*************************/
+.presentation {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 90);
+}
+
+.presentation h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10rem;
+  font-weight: bold;
+  fill: white;
+  -webkit-text-fill-color: white;
+  stroke: rgb(225, 225, 40);
+  -webkit-text-stroke: rgb(225, 225, 40);
+  stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+}
