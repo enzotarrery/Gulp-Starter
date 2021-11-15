@@ -1,0 +1,29 @@
+/* Regles generales */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.4rem; /* 14px par défaut */
+  /*font-family: 'Noto sans', sans-serif;*/
+}
+
+/* ATTENTION LES LIENS SONT NOIRS DANS CE MODELE */
+a:link,
+a:hover,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

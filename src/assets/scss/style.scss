@@ -1,0 +1,30 @@
+@use 'tools/reset.css';
+
+@use 'global/base';
+
+@use 'variables/mixins';
+@use 'variables/colors';
+@use 'variables/fonts';
+
+/*************************/
+/* Starter: Presentation */
+/*************************/
+.presentation {
+  height: 100vh;
+  @include mixins.flexarize(column, center, center);
+  background-color: rgb(0, 0, 90);
+
+  &__title {
+    font: {
+      family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      size: 10rem;
+      weight: bold;
+    }
+    fill: white;
+    -webkit-text-fill-color: white;
+    stroke: rgb(225, 225, 40);
+    -webkit-text-stroke: rgb(225, 225, 40);
+    stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+  }
+}
