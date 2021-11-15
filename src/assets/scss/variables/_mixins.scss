@@ -1,0 +1,17 @@
+@mixin full-size {
+  height: 100vh;
+  width: 100vw;
+}
+
+@mixin flexarize(
+  $direction: row,
+  $justify: flex-start,
+  $align: flex-start,
+  $wrap: wrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
