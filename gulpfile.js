@@ -106,6 +106,9 @@ function watch() {
     gulp.src(paths.html.src).pipe(plumber()).pipe(w3cjs());
     browserSync.reload();
   });
+  gulp.watch(paths.js.src).on('change', () => {
+    browserSync.reload();
+  });
 }
 
 // Variables
