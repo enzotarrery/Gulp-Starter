@@ -1,4 +1,4 @@
-/* Regles generales */
+/* General rules */
 *,
 *:after,
 *:before {
@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  font-size: 1.4rem; /* 14px par défaut */
-  /*font-family: 'Noto sans', sans-serif;*/
+  font-size: 1.4rem; /* 14px by default */
+  font-family: 'Noto sans', sans-serif;
 }
 
-/* ATTENTION LES LIENS SONT NOIRS DANS CE MODELE */
+/* WARNING: links are black by default, don't forget to reuse this syntax to override this default style */
 a:link,
 a:hover,
 a:visited {

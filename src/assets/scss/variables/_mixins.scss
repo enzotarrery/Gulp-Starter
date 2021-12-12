@@ -7,7 +7,7 @@
   $direction: row,
   $justify: flex-start,
   $align: flex-start,
-  $wrap: wrap
+  $wrap: nowrap
 ) {
   display: flex;
   flex-direction: $direction;

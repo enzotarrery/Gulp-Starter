@@ -1,7 +1,17 @@
+/* 
+  WARNING: 
+  please follow the order as described below 
+  to prevent any use error! 
+*/
+
+/* 1 - requirements */
 @use 'tools/reset.css';
 
+/* 2 - base model */
 @use 'global/base';
 
+/* 3 - modules */
 @use 'modules/presentation';
 
+/* 4 - pages exceptions */
 @use 'pages/index';
