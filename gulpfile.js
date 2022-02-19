@@ -8,7 +8,7 @@ const w3cjs = require('gulp-w3cjs');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const csscomb = require('gulp-csscomb');
-const sass = require('gulp-dart-sass');
+const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
@@ -27,7 +27,7 @@ const paths = {
   },
   scss: {
     src: './src/assets/scss/**/*.scss',
-    dest: './src/assets/css',
+    dest: './src/assets/css/',
   },
   js: {
     src: './src/assets/js/**/*.js',
@@ -76,9 +76,9 @@ function css() {
 }
 function scss() {
   return gulp
-    .src(paths.scss.src, { since: gulp.lastRun(scss) })
+    .src(paths.scss.src)
     .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(browserSync.stream());
 }

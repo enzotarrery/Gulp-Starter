@@ -5,7 +5,7 @@
 */
 
 /* 1 - requirements */
-@use 'tools/reset.css';
+@use 'tools/reset';
 
 /* 2 - base model */
 @use 'global/base';
@@ -13,5 +13,5 @@
 /* 3 - modules */
 @use 'modules/presentation';
 
-/* 4 - pages exceptions */
+/* 4 - pages */
 @use 'pages/index';
